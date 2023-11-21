@@ -13,7 +13,7 @@ struct ContentView: View {
     
     let audioFileName = "titanium-170190"
     let audioMetronome = "metronome"
-    let provagit : Bool = true
+    
     
     
     @State private var player: AVAudioPlayer?
