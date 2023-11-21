@@ -15,6 +15,10 @@ struct ContentView: View {
     let audioMetronome = "metronome"
     
     
+    @State private var pressedButton1x : Bool = true
+    @State private var pressedButton05x : Bool = false
+    @State private var pressedButton2x : Bool = false
+    
     
     @State private var player: AVAudioPlayer?
     @State private var playerMetronome : AVAudioPlayer?
@@ -113,58 +117,76 @@ struct ContentView: View {
                                             Button {
                                                 playerMetronome?.rate = 1
                                                 playerMetronome?.rate *= 0.5
+                                                pressedButton05x.toggle()
+                                                pressedButton1x = false
+                                                pressedButton2x = false
                                                 
                                             } label: {
                                                 Text("0.5x")
                                                     .frame(minWidth: 70, minHeight: 20)
                                                     .padding()
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(pressedButton05x ? .black : .white)
                                                     .background(
                                                         RoundedRectangle(
                                                             cornerRadius: 10,
                                                             style: .continuous
                                                         )
-                                                        .stroke(.black, lineWidth: 2)
+                                                        .stroke(pressedButton05x ? .white : .black, lineWidth: 2)
+                                                        .fill(pressedButton05x ? .white : .clear)
 
                                                     )
-                                            }.disabled(!toggleBool)
+                                            }
                                             
                                             Button {
                                                 playerMetronome?.rate = finalBpm/songBpm
+                                                pressedButton1x.toggle()
+                                                pressedButton05x = false
+                                                pressedButton2x = false
 
                                             } label: {
                                                 Text("1x")
                                                     .frame(minWidth:70,minHeight: 20)
                                                     .padding()
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(pressedButton1x ? .black : .white)
                                                     .background(
                                                         RoundedRectangle(
                                                             cornerRadius: 10,
                                                             style: .continuous
+                                                            
                                                         )
-                                                        .stroke(.black, lineWidth: 2)
+                                                        .stroke(pressedButton1x ? .white : .black, lineWidth: 2)
+                                                        .fill(pressedButton1x ? .white : .clear)
+                                                        
+                                                        
 
                                                     )
-                                            }.padding().disabled(!toggleBool)
+                                            }.padding()
                                             
                                             Button {
                                                 playerMetronome?.rate = 1
                                                 playerMetronome?.rate *= 2
+                                                pressedButton2x.toggle()
+                                                pressedButton1x = false
+                                                pressedButton05x = false
+                                                
                                             } label: {
                                                 
                                                 Text("2x")
                                                     .frame(minWidth:70,minHeight: 20)
                                                     .padding()
-                                                    .foregroundColor(.white)
+                                                    .foregroundColor(pressedButton2x ? .black : .white)
                                                     .background(
                                                         RoundedRectangle(
                                                             cornerRadius: 10,
                                                             style: .continuous
                                                         )
-                                                        .stroke(.black, lineWidth: 2)
+                                                        .stroke(pressedButton2x ? .white : .black, lineWidth: 2)
+                                                        .fill(pressedButton2x ? .white : .clear)
 
                                                     )
-                                            }.disabled(!toggleBool)
+                                            }
+
+                                       
                                             
                            
                                             
