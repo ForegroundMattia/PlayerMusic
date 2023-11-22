@@ -64,6 +64,7 @@ struct ContentView: View {
                        seekAudio(to: newValue)
                    }), in: 0...totalTime)
                    .accentColor(.white)
+                   .accessibilityLabel("Progress Song")
                    
                   Text(timeString(time: totalTime)).foregroundStyle(.white)
                 }
@@ -100,13 +101,13 @@ struct ContentView: View {
                                             Slider(value: $volumeMetronome,in: 0...1){ editing in
                                                 playerMetronome?.volume = volumeMetronome
                                                 
-                                            }.padding().disabled(!toggleBool)
+                                            }.padding().disabled(!toggleBool).accessibilityLabel("Metronomo Volume slider")
                                         }.padding()
                                         VStack{
                                             Text("L & R")
                                             Slider(value: $rlPositionAudio,in: -1...1){ editing in
                                                 playerMetronome?.pan = rlPositionAudio
-                                            }.padding().disabled(!toggleBool)
+                                            }.padding().disabled(!toggleBool).accessibilityLabel("L & R slider")
                                         }.padding()
                                         
                                     }
@@ -135,7 +136,7 @@ struct ContentView: View {
                                                         .fill(pressedButton05x ? .white : .clear)
 
                                                     )
-                                            }
+                                            }.accessibilityLabel("0.5x Metronomo")
                                             
                                             Button {
                                                 playerMetronome?.rate = finalBpm/songBpm
@@ -160,7 +161,7 @@ struct ContentView: View {
                                                         
 
                                                     )
-                                            }.padding()
+                                            }.padding().accessibilityLabel("1x Metronomo")
                                             
                                             Button {
                                                 playerMetronome?.rate = 1
@@ -184,7 +185,7 @@ struct ContentView: View {
                                                         .fill(pressedButton2x ? .white : .clear)
 
                                                     )
-                                            }
+                                            }.accessibilityLabel("2x Metronomo")
 
                                        
                                             
@@ -197,7 +198,7 @@ struct ContentView: View {
                                         playerMetronome?.rate = finalBpm/songBpm
                                         
                                         
-                                    }.padding()
+                                    }.padding().accessibilityLabel("Bpm Song modify slider")
                                 
                                     Button("Back To original") {
                                         finalBpm = songBpm
@@ -205,7 +206,7 @@ struct ContentView: View {
                                         playerMetronome?.rate = 1
                                         
                                     
-                                    }
+                                    }.accessibilityLabel("Back To original Bpm Song")
 
                                 }
                             }
