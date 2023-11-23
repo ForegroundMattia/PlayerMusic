@@ -11,8 +11,8 @@
 		4D2DED732B0F54D900F27850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2DED722B0F54D900F27850 /* ContentView.swift */; };
 		4D2DED752B0F54DA00F27850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2DED742B0F54DA00F27850 /* Assets.xcassets */; };
 		4D2DED782B0F54DA00F27850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2DED772B0F54DA00F27850 /* Preview Assets.xcassets */; };
-		4D2DED802B0F553F00F27850 /* titanium-170190.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D2DED7E2B0F553F00F27850 /* titanium-170190.mp3 */; };
-		4D2DED812B0F553F00F27850 /* metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D2DED7F2B0F553F00F27850 /* metronome.mp3 */; };
+		4DA8874C2B0F56CD001BDFC4 /* metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8874A2B0F56CD001BDFC4 /* metronome.mp3 */; };
+		4DA8874D2B0F56CD001BDFC4 /* titanium-170190.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8874B2B0F56CD001BDFC4 /* titanium-170190.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +21,8 @@
 		4D2DED722B0F54D900F27850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D2DED742B0F54DA00F27850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2DED772B0F54DA00F27850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4D2DED7E2B0F553F00F27850 /* titanium-170190.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "titanium-170190.mp3"; path = "../../Americano Challenge/titanium-170190.mp3"; sourceTree = "<group>"; };
-		4D2DED7F2B0F553F00F27850 /* metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metronome.mp3; path = "../../Americano Challenge/metronome.mp3"; sourceTree = "<group>"; };
+		4DA8874A2B0F56CD001BDFC4 /* metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = metronome.mp3; sourceTree = "<group>"; };
+		4DA8874B2B0F56CD001BDFC4 /* titanium-170190.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "titanium-170190.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				4D2DED702B0F54D900F27850 /* PlayerMusicApp.swift */,
-				4D2DED7F2B0F553F00F27850 /* metronome.mp3 */,
-				4D2DED7E2B0F553F00F27850 /* titanium-170190.mp3 */,
+				4DA8874A2B0F56CD001BDFC4 /* metronome.mp3 */,
+				4DA8874B2B0F56CD001BDFC4 /* titanium-170190.mp3 */,
 				4D2DED722B0F54D900F27850 /* ContentView.swift */,
 				4D2DED742B0F54DA00F27850 /* Assets.xcassets */,
 				4D2DED762B0F54DA00F27850 /* Preview Content */,
@@ -131,10 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D2DED802B0F553F00F27850 /* titanium-170190.mp3 in Resources */,
-				4D2DED812B0F553F00F27850 /* metronome.mp3 in Resources */,
 				4D2DED782B0F54DA00F27850 /* Preview Assets.xcassets in Resources */,
+				4DA8874C2B0F56CD001BDFC4 /* metronome.mp3 in Resources */,
 				4D2DED752B0F54DA00F27850 /* Assets.xcassets in Resources */,
+				4DA8874D2B0F56CD001BDFC4 /* titanium-170190.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
