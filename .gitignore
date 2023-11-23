@@ -115,3 +115,5 @@ xcuserdata
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,swiftpm,xcode,xcodeinjection
 .DS_Store
+PlayerMusic.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+PlayerMusic.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
