@@ -4,7 +4,7 @@ This project is a study of the AVKit Framework, I tried to emulate the functiona
 
 In this project given a track you can: <br>
 
-choose the listening volume
-choose the listening side ( R&L)
-Speed up or slow down the Bpm of the song
+choose the listening volume<br>
+choose the listening side (R&L) <br>
+Speed up or slow down the Bpm of the song <br>
 
